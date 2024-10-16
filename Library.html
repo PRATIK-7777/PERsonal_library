@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url('me2.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        
+        h2 {
+            font-size: 40px;
+        }
+        
+        a {
+            color: #fb0079;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px 30px;
+            margin: 20px;
+            border: 2px solid #fb0079;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            background-color: #fb0079;
+            color: white;
+        }
+        
+        /* Flexbox for book list */
+        .book-list {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap onto the next line */
+            justify-content: center; /* Center items */
+            gap: 20px; /* Gap between items */
+            margin: 20px;
+            padding: 0 20px;
+        }
+        
+        .book {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            flex: 1 1 300px; /* Allow items to grow/shrink and set a base width */
+            max-width: 300px; /* Limit maximum width */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Optional shadow for effect */
+        }
+        
+        .book:hover {
+            transform: translateY(-10px);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>My Library</h2>
+    <a href="FIRST.HTML">Back to Main Page</a>
+</header>
+
+<div class="book-list">
+    <div class="book">
+        <h3>Introduction to java</h3>
+        <p>by Robert C. Martin</p>
+        <a href="javanotes.pdf" target="_blank">Download PDF</a>
+    </div>
+    <div class="book">
+        <h3>The Pragmatic Programmer</h3>
+        <p>by Andrew Hunt & David Thomas</p>
+        <a href="javanotes.pdf" target="_blank">Download PDF</a>
+    </div>
+    <div class="book">
+        <h3>Design Patterns</h3>
+        <p>by Erich Gamma</p>
+        <a href="javanotes.pdf" target="_blank">Download PDF</a>
+    </div>
+    <div class="book">
+        <h3>Introduction to Algorithms</h3>
+        <p>by Cormen, Leiserson, Rivest, Stein</p>
+        <a href="javanotes.pdf" target="_blank">Download PDF</a>
+    </div>
+    <!-- Add more books here -->
+    <div class="book">
+        <h3>Refactoring</h3>
+        <p>by Martin Fowler</p>
+        <a href="javanotes.pdf" target="_blank">Download PDF</a>
+    </div>
+    <div class="book">
+        <h3>Effective Java</h3>
+        <p>by Joshua Bloch</p>
+        <a href="javanotes.pdf" target="_blank">Download PDF</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 | Pratik's Library</p>
+</footer>
+
+</body>
+</html>

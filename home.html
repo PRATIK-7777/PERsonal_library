@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+    body {
+        background-color: #121212;
+        font-family: 'Poppins', sans-serif;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h2, h3 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 600;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fb0079;
+        padding: 10px 30px;
+        border: 2px solid #fb0079;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+    }
+    
+    a:hover {
+        background-color: #fb0079;
+        color: white;
+    }
+    
+    header {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('ME3.WEBP');
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+        text-align: center;
+        color: white;
+        height: 100vh;
+    }
+    
+    header h1 {
+        font-size: 60px;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    }
+    
+    nav {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    nav a {
+        font-size: 20px;
+        margin: 0 15px;
+    }
+    
+    nav a:hover {
+        background-color: #fb0079;
+        color: white;
+    }
+    
+    .content {
+        padding: 60px 30px;
+        text-align: center;
+        background-color: #1a1a1a;
+        border-radius: 15px;
+        margin: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+    
+    .content p {
+        line-height: 1.8;
+        font-size: 18px;
+        margin: 20px 0;
+    }
+    
+    /* Responsive Cards Section */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Responsive grid layout */
+        gap: 30px;
+        margin: 50px 20px; /* Margin for better spacing */
+    }
+    
+    .card {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    }
+    
+    .card h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #fb0079;
+    }
+    
+    .card p {
+        font-size: 16px;
+        color: #bbb;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: #fff;
+    }
+    
+    #scrollToTop {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #fb0079;
+        color: white;
+        padding: 15px;
+        border-radius: 50%;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    #scrollToTop:hover {
+        background-color: #e5006b;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    /* Responsive Media Queries */
+    @media (max-width: 1200px) {
+        header h1 {
+            font-size: 50px; /* Smaller font for larger screens */
+        }
+    
+        nav a {
+            font-size: 18px; /* Slightly smaller navigation links */
+        }
+    }
+    
+    @media (max-width: 768px) {
+        header {
+            padding: 80px 0; /* Adjust header padding */
+        }
+    
+        header h1 {
+            font-size: 40px; /* Smaller font for mobile */
+        }
+    
+        .content {
+            padding: 40px 20px; /* Adjust content padding */
+        }
+    
+        .card {
+            margin-bottom: 20px; /* Add spacing between stacked cards */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        header h1 {
+            font-size: 30px; /* Even smaller font for very small screens */
+        }
+    
+        nav a {
+            font-size: 16px; /* Further decrease font size */
+        }
+    
+        .content p {
+            font-size: 16px; /* Smaller paragraph text */
+        }
+    
+        #scrollToTop {
+            padding: 10px; /* Smaller button on mobile */
+            font-size: 18px; /* Smaller icon size */
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Page</h1>
+    <nav>
+        <a href="FIRST.html">Home</a>
+        <a href="Library.html">Library</a>
+    </nav>
+</header>
+
+<div class="content">
+    <h2>About Me</h2>
+    <p>Hello! I'm Pratik, a student pursuing a Master of Computer Applications (MCA) at RCOEM. I'm passionate about technology and coding. I enjoy playing sports like Karate and Cricket to stay fit and disciplined. Join me on this journey of continuous learning and growth!</p>
+</div>
+
+<div class="cards">
+    <div class="card">
+        <h3>Technology Enthusiast</h3>
+        <p>I love exploring new programming languages and tools, diving deep into software development, and creating innovative solutions.</p>
+    </div>
+    <div class="card">
+        <h3>Karate Practitioner</h3>
+        <p>Karate not only helps me stay physically fit but also trains my mind to focus, discipline, and stay calm in any situation.</p>
+    </div>
+    <div class="card">
+        <h3>Cricket Lover</h3>
+        <p>Cricket is my favorite sport. I enjoy its physical challenge and the strategic thinking it demands from players.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 | Pratik's Personal Page</p>
+</footer>
+
+
+<button id="scrollToTop">↑</button>
+
+<script>
+    
+    window.onscroll = function() {
+        var button = document.getElementById("scrollToTop");
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    }
+
+    
+    document.getElementById("scrollToTop").addEventListener("click", function() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+</script>
+
+</body>
+</html>

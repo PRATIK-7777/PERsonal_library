@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('ME.JPG');
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        h1 {
+            font-size: 50px;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        a {
+            color: #fb0079;
+            font-size: 20px;
+            margin: 20px;
+            text-decoration: none;
+            padding: 10px 30px;
+            border: 2px solid #fb0079;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #fb0079;
+            color: white;
+        }
+
+        .about-me {
+            text-align: center;
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0.7);
+            margin: 20px;
+            border-radius: 15px;
+        }
+
+        .about-me p {
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+     
+        html {
+            scroll-behavior: smooth;
+        }
+
+        
+        #scrollToTop {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #fb0079;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #scrollToTop:hover {
+            background-color: #e5006b;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Page!</h1>
+    <a href="home.html">About Me</a>
+    <a href="Library.html">Library</a>
+</header>
+
+<div class="about-me">
+    <p><b>Hello, I'm Pratik!</b></p>
+    <p>I am currently pursuing a Master of Computer Applications (MCA) at RCOEM, after completing my Bachelor of Computer Applications (BCA) from SGBAU University. My strong interest in technology and coding led me to explore various programming languages and software development techniques, and I am deeply passionate about further developing my skills in computer science.</p>
+    <p>Outside of academics, I have a keen interest in sports. I practice Karate, which helps me maintain physical fitness while also enhancing my mental discipline and focus. Cricket is another sport I enjoy playing in my free time, as I appreciate both its physical and strategic elements.</p>
+    <p>Born on October 10, 2002, I am highly motivated and determined to excel in both my personal and professional life. My curiosity and eagerness to learn new technologies drive me to continuously improve.</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 | Pratik's Personal Page</p>
+</footer>
+
+<button id="scrollToTop">↑</button>
+
+<script>
+
+    window.onscroll = function() {
+        var button = document.getElementById("scrollToTop");
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    }
+
+    document.getElementById("scrollToTop").addEventListener("click", function() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+</script>
+
+</body>
+</html>
